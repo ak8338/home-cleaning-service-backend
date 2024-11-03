@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'cleaning_service.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'your_db_name',  # Replace with your actual PostgreSQL database name
-        'USER': 'your_db_user',  # Replace with your PostgreSQL username
-        'PASSWORD': 'your_db_password',  # Replace with your PostgreSQL password
+        'NAME': 'cleanhome_db',  # Replace with your actual PostgreSQL database name
+        'USER': 'postgres',  # Replace with your PostgreSQL username
+        'PASSWORD': 'password',  # Replace with your PostgreSQL password
         'HOST': 'localhost',  # Or your database host
         'PORT': '5432',  # Default PostgreSQL port
     }

@@ -16,3 +16,6 @@ class Booking(models.Model):
     def clean(self):
         if Booking.objects.filter(booking_date=self.booking_date).exists():
             raise ValidationError('This time slot is already booked.')
+        
+    class Meta:
+        db_table='bookings'
